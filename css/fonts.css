@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'Overpass400';
+    src: url(../fonts/Overpass-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Overpass700';
+    src: url(../fonts/Overpass-Bold.ttf);
+}

@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Fonts */
+    --overpass-regular: 'Overpass400';
+    --overpass-bold: 'Overpass700';
+
+    /* Primary colors */
+    --orange: hsl(25, 97%, 53%);
+
+    /* Neutral colors */
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --medium-dark-blue: hsl(215, 20%, 14%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+html, .submit-button {
+    font-size: 15px;
+}
+
+.container, .icon, .score, .number, .card2 {
+    display: flex;
+}
+
+.container, .icon, .number {
+    justify-content: center;
+}
+
+.container, .icon, .number, .card2 {
+    align-items: center;
+}
+
+.text, .number, .submit-button, .selection {
+    font-family: var(--overpass-regular);
+}
+
+.text, .number {
+    color: var(--medium-grey);
+}
+
+.icon, h1, .text, .score, .submit-button {
+    margin: 16px 0;
+}
+
+.icon, .number, .selection {
+    background-color: var(--dark-blue);
+}
+
+.icon, .number {
+    width: 3em;
+    height: 3em;
+    border-radius: 50px;
+}
+
+.color-white, .light-grey-background, .submit-button, .number:hover, .submit-button, .orange-background {
+    color: var(--white);
+}
+
+.number:hover, .submit-button:hover, .light-grey-background, .orange-background {
+    cursor: pointer;
+    transition: .5s;
+}
+
+.number:hover, .submit-button, .orange-background {
+    background-color: var(--orange);
+}
+
+.image, .selection {
+    margin: 14px 0;
+}
+
+.submit-button, .selection {
+    border-radius: 25px;
+}
+
+.submit-button:hover, .selection {
+    color: var(--orange);
+}
+
+.container {
+    height: 100vh;
+    background-color: var(--very-dark-blue);
+}
+
+.card {
+    max-width: 337.5px;
+    margin: 0 auto;
+    background-color: var(--medium-dark-blue);
+    border-radius: 12px;
+    padding: 18.75px;
+}
+
+.score {
+    justify-content: space-between;
+}
+
+.number {
+    list-style: none;
+}
+
+.submit-button {
+    width: 100%;
+    letter-spacing: 2px;
+    border: none;
+    padding: 16px;
+}
+
+.submit-button:hover {
+    background-color: var(--white);
+}
+
+.light-grey-background {
+    background-color: var(--light-grey);
+}
+
+.card2 {
+    flex-direction: column;
+}
+
+.selection {
+    padding: 10px;
+}
+
+.message {
+    margin-top: 0;
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--overpass-bold);
+}
+
+@media screen and (min-width: 1440px) {
+    .card1 {
+        max-width: 375px;
+        padding: 22px;
+    }
+
+    .card2 {
+        max-width: 385px;
+        padding: 26px;
+    }
+}

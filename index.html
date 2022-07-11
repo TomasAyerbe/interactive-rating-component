@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive rating component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <main class="container">
+        <section class="card card1">
+            <div class="icon">
+                <img src="images/icon-star.svg" alt="Icon Star">
+            </div>
+            <h1 class="color-white">How did we do?</h1>
+            <p class="text">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+            <ul class="score">
+                <li class="number" id="1" value="1">1</li>
+                <li class="number" id="2" value="2">2</li>
+                <li class="number" id="3" value="3">3</li>
+                <li class="number" id="4" value="4">4</li>
+                <li class="number" id="5" value="5">5</li>
+            </ul>
+            <button class="submit-button">SUBMIT</button>
+        </section>
+        <section class="card card2">
+            <div class="image">
+                <img src="images/illustration-thank-you.svg" alt="Thank you">
+            </div>
+            <div class="selection">
+                <p>You selected <span class="selected"></span> out of 5</p>
+            </div>
+            <h1 class="color-white">Thank you!</h1>
+            <p class="text message">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+        </section>
+    </main>
+</body>
+</html>
